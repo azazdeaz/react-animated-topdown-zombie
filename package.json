@@ -49,6 +49,8 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "react": "^0.13.0"
+    "gsap": "^1.18.0",
+    "react": "^0.13.0",
+    "react-gsap-enhancer": "^0.1.10"
   }
 }
