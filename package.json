@@ -26,7 +26,7 @@
     "babel",
     "react-transform"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Polgár András <azazdeaz@gmail.com>",
   "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
