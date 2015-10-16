@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { NICE, SUPER_NICE } from './colors';
-import GSAP from 'react-gsap-enhancer'
+import animachine from 'react-animachine-enhancer'
 require('gsap')
 
 const anim = ({target}) => {
   return TweenMax.to(target, 1, {x: '+=123', yoyo: true, repeat: -1})
 }
 
-@GSAP()
+@animachine()
 class Counter extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +31,7 @@ class Counter extends Component {
 
   render() {
     return (
-      <h1 style={{ color: this.props.color, transform: `translate(${this.props.increment}px)` }}>
+      <h1 style={{ color: this.props.color, transform: `translate(${this.state.counter}px)` }}>
         Counter ({this.props.increment}): {this.state.counter}
       </h1>
     );
@@ -42,8 +42,8 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Counter increment={10} color={NICE} />
-        <Counter increment={50} color={SUPER_NICE} />
+        <Counter increment={1} color={NICE} />
+        <Counter increment={5} color={SUPER_NICE} />
       </div>
     );
   }
