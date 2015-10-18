@@ -1,3 +1,4 @@
+<img src="http://i.imgur.com/kIOyefR.png">
 react-animated-topdown-zombie
 =============================
 
